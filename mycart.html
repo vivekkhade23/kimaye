@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+         body{
+            background-color: rgb(240, 240, 240);
+        }
+        /*---------------------------------mumbai availability bar----------------------*/
+    #mumbai_availablity{
+        height: 25px;
+        width: 100%;
+        text-align: center;
+        color: white!important;
+        background-color: rgb(87, 128, 61);
+        padding: auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: smaller;  
+    }
+     /*--------------------------------------top nav bar----------------------------------*/
+     .shop_dropdown{
+       
+       /*height: 15px;*/
+        width: 100%;
+    }
+    .right_float{
+        float:right;
+        clear: right;
+   
+    }
+    .right_float  img{
+        float:right;
+      margin-right: 10px;
+      margin-left: 10px;
+    
+      height: 25px;
+      width: 25px;
+      background-color: rgb(228, 228, 228);
+    }
+    .left_float{
+       
+      margin-left: 10px; 
+    }
+    .left_float > details{
+       float: left;
+      padding-left: 20px;
+      font-size: large;
+      padding-top: 18px;
+
+    }
+    .left_float > details:hover{
+       float: left;
+      padding-left: 20px;
+      font-size: large;
+      padding-top: 18px;
+      color: #437111;
+
+    }
+    .drop{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       color: #437111;
+       font-size: small;
+
+    }
+    .drop:hover{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: underline;
+        color: #437111;
+        font-size: normal;
+        
+    }
+    .left_float > p{
+       float: left;
+      padding-left: 20px;
+      font-size: large;
+   
+      
+    }
+    .cart_add{
+  
+   border-radius: 8px;
+   margin-left: 5%;
+   width: 20px;
+   height: 10px;
+   background-color:#437111 ;
+    color: white;
+   border: 1px solid black;
+   padding-left: 3px;
+   padding-right: 3px;
+
+
+ }
+    
+    .logo  img{
+        
+        width: 190px;
+        height: 35px;
+        margin-top: 1%;
+        margin-bottom:1%;
+        margin-left: 28%;
+    }
+    
+    
+    .right_float  img{
+      margin-right: 10px;
+      height: 25px;
+      width: 25px;
+      background-color: rgb(228, 228, 228);
+    }
+     /*------------------------------------------------cart text bar------------------------------------------------*/
+     .cart_bar{
+  width: 100%;
+  height: 100px;
+  background-color:#437111 ;
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+     }
+     .cart_bar > h1{
+         font-weight: lighter!important;
+        
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+
+     }
+     .home_icon{
+  display: flex;
+  flex-direction: row;
+  margin-left: 45% ;
+  text-align: center;
+}
+.home_icon > img{
+  margin-top:3px;
+  width: 30px;
+  height: 20px;
+
+}
+.home_icon > p{
+  color:rgb(172, 169, 169)!important;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.home_icon > a{
+ color: white;
+text-decoration: unset;
+  padding-top: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-family: bolder;
+}
+.h1{
+   
+   padding:5px 5px 5px 5px;
+   background-color:#437111 ;
+   color: white !important;
+   text-decoration: unset !important;
+  
+}
+ /*------------------------------------------------products------------------------------------------------*/
+
+        #products {
+            margin: 5% 5% 10% 5%;
+            /*----height: 700px;------*/
+            display: grid;
+            grid-template-columns: 40% 40% ;
+            grid-gap: 2%;
+            justify-content:left;
+        }
+        img{
+            width: 80%;
+           
+        }
+        /*-------------------------------product text----------------------------*/
+        p{
+            color: black!important;
+        }
+        h4{
+            color: red;
+        }
+        #totalAmount{
+            color:black !important;
+            font-size: larger;
+            font-weight: bolder;
+        }
+        .shipping{
+         color: black !important ;
+         font-weight: lighter !important;
+         text-decoration: italic;
+        }
+        /*------------------------------------layout cart-------------------------*/
+        .grid{
+           display: grid;
+           grid-template-columns: 50% 50% ;
+           gap: 3%;
+        }
+        
+          </style>
+</head>
+<body>
+    
+     <!---------------------------mumbai availability bar---------------------------------->
+     <div id="mumbai_availablity">
+        <p>Currently available in Mumbai | Free Shipping above Rs. 350</p>
+    </div>
+   <!-----------------------shop , learn , grow drop down------------------------------------------>
+   <div id="shop_dropdown">
+   <div class="left_float">
+ 
+    <details>
+      <summary>SHOP</summary>
+             <a href="allfruits.html"><div class="drop">All Fruits</div></a>
+             <div class="drop">Fresh Cuts</div>
+             <div class="drop">Fruits Combos</div>
+             <div class="drop">Gifts by Kimaye</div>   
+     </details>
+     <p>LEARN</p>
+     <p>GROW</p>
+   
+       
+    
+        
+   </div> 
+    <div class="logo">
+       <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x@2x.png?v=1596288204"/>
+    </div>
+     <div class="right_float">
+        
+    
+        <a href ="login.html"> <img src="https://www.pikpng.com/pngl/m/5-52254_png-file-user-profile-icon-svg-clipart.png"/></a>
+     
+         <img src="https://static.thenounproject.com/png/3134345-200.png"/>
+     </div>
+
+   </div>
+   <!-----------------------------------cart text--------------------------------------------->
+   <br>
+
+   <div class="cart_bar">
+       <h1>CART</h1>
+       <div class="home_icon">
+        <img src="https://img.flaticon.com/icons/png/512/25/25694.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"/>
+        <a href="index.html"> <div>Home</div></a>
+        <p>/Cart</p>
+   </div>
+   <!----------------------------products amount----------------------------------------->
+<div class="grid">
+    <div id="products" class="flex"></div>
+    <div class="right_total">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 class="h1">TOTAL AMOUNT</h1>
+        <div class="shipping">FREE SHIPPING on first order</div>
+    <div id="totalAmount"></div>
+    <a href="address.html"><h2 class="h1">CHECKOUT & PAY</h2></a>
+</div>
+
+</div>
+</body>
+<script>
+    let parent = document.getElementById("products");
+   let total_amount = document.getElementById("totalAmount");
+    let cart = JSON.parse(localStorage.getItem("cart"))
+    console.log(cart)
+let total =0;
+    function showProducts() {
+ cart.forEach(function(product){
+console.log(product.name);
+
+let div = document.createElement("div");
+
+  let img = document.createElement("img");
+  img.src = product.img;
+
+  let product_price = document.createElement("h4");
+  product_price.textContent = '₹' + product.price;
+
+  let product_name = document.createElement("p");
+  product_name.textContent = product.name;
+
+ let addtocart_btn = document.createElement("button");
+  addtocart_btn.innerText = "Added";
+
+  addtocart_btn.onclick = function() {
+      addtoCart(product);
+  };
+  total += Number(product.price);
+  total_amount.textContent =  '₹'+total
+  div.append(img, product_name, product_price, addtocart_btn);
+
+  parent.append(div);
+
+})
+}
+showProducts()
+
+</script>
+</html>

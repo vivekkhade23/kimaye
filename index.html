@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            background-color: rgb(228, 228, 228)
+        }
+
+        /*---------------------------------mumbai availability bar----------------------*/
+        #mumbai_availablity {
+            height: 25px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            background-color: #437111;
+            padding: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: smaller;
+        }
+
+        /*--------------------------------------top nav bar----------------------------------*/
+        .shop_dropdown {
+
+            /*height: 15px;*/
+            width: 100%;
+        }
+
+        .right_float {
+            float: right;
+            clear: right;
+
+        }
+
+        .right_float img {
+            float: right;
+            margin-right: 10px;
+            margin-left: 10px;
+
+            height: 25px;
+            width: 25px;
+            background-color: rgb(228, 228, 228);
+        }
+
+        .left_float {
+
+            margin-left: 10px;
+
+
+        }
+
+        .left_float>details {
+            float: left;
+            padding-left: 20px;
+            font-size: large;
+            padding-top: 18px;
+
+        }
+
+        .left_float>details:hover {
+            float: left;
+            padding-left: 20px;
+            font-size: large;
+            padding-top: 18px;
+            color: #437111;
+
+        }
+
+        .drop {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #437111;
+            font-size: small;
+
+        }
+
+        .drop:hover {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: underline;
+            color: #437111;
+            font-size: normal;
+
+        }
+
+        .left_float>p {
+            float: left;
+            padding-left: 20px;
+            font-size: large;
+
+        }
+
+
+        .logo>img {
+
+            width: 190px;
+            height: 35px;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            margin-left: 28%;
+        }
+
+
+        .right_float img {
+            margin-right: 10px;
+            height: 25px;
+            width: 25px;
+            background-color: rgb(228, 228, 228);
+        }
+
+
+
+        /*---------------------------------------sliding images---------------------------------*/
+        img {
+            width: 100%;
+            height: 550px;
+
+        }
+
+        /*------------------------text hanpicked ------------------------------------*/
+        .text_fullimg {
+            text-align: center;
+            margin-top: 55px;
+            margin-bottom: 52px;
+        }
+
+        .text_fullimg>img {
+            width: 9%;
+            height: 40px;
+        }
+
+        /*------------------ grid of catogaries------------------------------------*/
+        .grid_shop_categories {
+            margin-left: 10%;
+            margin-right: 10%;
+            display: flex;
+
+            gap: 50px;
+
+        }
+
+        .grid_shop_categories>div {
+
+            width: 490px;
+            height: 500px;
+
+        }
+
+        .grid_shop_categories img:nth-child(1) {
+            width: 490px;
+            height: 350px;
+            border-radius: 40px;
+
+
+
+        }
+
+        .grid_shop_categories img:nth-child(3) {
+            width: 490px;
+            height: 350px;
+            border-radius: 40px;
+
+
+        }
+
+        .grid_shop_categories img:nth-child(2) {
+            width: 490px;
+            height: 90px;
+
+        }
+
+        .grid_shop_categories img:nth-child(4) {
+            width: 490px;
+            height: 90px;
+
+        }
+
+        .hover {
+            text-align: center;
+            margin: 35px;
+        }
+
+        .hover>img:nth-child(3):hover {
+            transform: scale(0.9);
+
+            transition: 0.5s;
+        }
+
+        .hover>img:nth-child(1):hover {
+            transform: scale(0.9);
+
+            transition: 0.5s;
+        }
+
+        /*------------------------shop now button--------------------------------------------*/
+        .shop_button {
+
+            background-color: #df1111;
+            color: white;
+            border: none;
+            padding: 10px 20px 10px 20px;
+            /* margin-left: 40px; */
+            border-radius: 20px;
+
+        }
+
+        /*----------------------------know more-----------------------------------------------*/
+        .knowmore {
+            width: 100%;
+            margin-top: 75px;
+            height: 550px;
+           
+
+        }
+        .knowmore>div{
+            display: flex;
+           text-align: center;
+           gap: 75px;
+           justify-content: center;
+        }
+#parra{
+    /* border: 1px solid; */
+    width: 33%;
+    align-items: center;
+    text-align: center;
+    margin-top: 140px;
+}
+        /*------------------------------footer-----------------------------------------*/
+        #footer_index {
+            width: 100%;
+            height: 300px;
+            background-color: #70934b;
+
+        }
+        #foot1{
+            display: flex;
+            justify-content: space-around;
+        }
+        #foot1 div img{
+width: 40px;
+height: 40px;
+        }
+        #footer_index hr{
+            color: rgb(69, 69, 69);
+            background-color: gray;
+            width: 80%;
+        }
+    #foot2{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    </style>
+</head>
+
+<body>
+    <!---------------------------mumbai availability bar------------->
+    <div id="mumbai_availablity">
+        <p>Currently available in Mumbai | Free Shipping above Rs. 350</p>
+    </div>
+    <!-----------------------shop , learn , grow drop down------------------------------------------>
+    <div id="shop_dropdown">
+        <div class="left_float">
+
+
+            <details>
+                <summary>SHOP</summary>
+                <a href="allfruits.html">
+                    <div class="drop">All Fruits</div>
+                </a>
+                <div class="drop">Fresh Cuts</div>
+                <div class="drop">Fruits Combos</div>
+                <div class="drop">Gifts by Kimaye</div>
+            </details>
+            <p>LEARN</p>
+            <p>GROW</p>
+
+
+
+        </div>
+        <div class="logo">
+            <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x@2x.png?v=1596288204" />
+        </div>
+        <div class="right_float">
+            <a href="mycart.html"> <img
+                    src="https://toppng.com/uploads/preview/luxury-goods-tide-icon-comments-bag-cart-icon-11553457648rokwlpgpvq.png" /></a>
+
+
+            <a href="login.html"> <img
+                    src="https://www.pikpng.com/pngl/m/5-52254_png-file-user-profile-icon-svg-clipart.png" /></a>
+
+            <img src="https://static.thenounproject.com/png/3134345-200.png" />
+        </div>
+
+    </div>
+
+    <!------------------------------images slide-------------------------------------------->
+    <br>
+    <br>
+    <br>
+    <div id="mySlideshow"></div>
+    <!----------------------------text kimaye handpicked---------------------------------------->
+    <div class="text_fullimg">
+        <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/t/25/assets/recom-leaf.png" />
+        <h1>KIMAYE RECOMMENDS</h1>
+        <h2> A handpicked and curated fruit offering</h2>
+    </div>
+    <!------------------------------grid of catogaries------------------------------------------------------>
+    <div class="grid_shop_categories">
+        <div class="hover">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-1-min_720x.png?v=1614338437" />
+            <!-- <img src="./images/allfruits.png"/> -->
+            <h1>All fruits </h1>
+            <h4>Pick and choose from a wide range of delicious fruits</h4>
+            <a href="allfruits.html"><button class="shop_button">Shop Now</button></a>
+        </div>
+        <div class="hover">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-3-min_720x.png?v=1614338730" />
+            <!-- <img src="./images/freshcuts.png"/> -->
+            <h1>FRESH CUTS</h1>
+            <h4>We want to spoon-feed you... quite literally</h4>
+            <button class="shop_button">Shop Now</button>
+        </div>
+    </div>
+    <div class="grid_shop_categories">
+        <div class="hover">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-2-min_720x.jpg?v=1614339080" />
+            <!-- <img src="./images/combos.png"/> -->
+            <h1>FRUIT COMBOS</h1>
+            <h4>Indulge in fruit combinations created by us</h4>
+            <button class="shop_button">Shop Now</button>
+        </div>
+        <div class="hover">
+            <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/2I8A6078_720x.jpg?v=1631516874" />
+            <!-- <img src="./images/gifts.png"/> -->
+            <h1>GIFTS BY KIMAYE</h1>
+            <h4>Healthy & memorable gifts for your loved ones</h4>
+            <button class="shop_button">Shop Now</button>
+        </div>
+    </div>
+    <!------------------------------------know more-------------------------------------->
+
+    <div class="knowmore">
+        <!-- <img src="./images/knowmore.png" /> -->
+    <div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/kimahi_570x_2db87855-9260-47c2-a80e-3759af77dbea_570x.png?v=1622009438" alt="">
+        </div>
+        <div id="parra">
+            <h1>WE’D LIKE TO SAY KIMAHI…</h1>
+            <h4>Many of us share common safety concerns about the food we eat.
+                <br>
+                <br>
+                When it comes to fruits, these concerns are even more serious in terms of the way they are grown and handled throughout their farm-to-home journey. We make eating fruits a worry-free and enjoyable experience for you.
+                <br>
+                <br>
+                Since 2009, we have set the benchmark for fruit safety and quality in 35 countries. Kimaye is now expanding its footprint in India, bringing you multiple varieties of fruit that are grown, packaged, and delivered in the safest and most socially responsible manner.</h4>
+        
+            </div>
+    </div>
+    </div>
+    <!------------------------------------2nd text (secret)-------------------------------------->
+
+    <div class="text_fullimg">
+        <!-- <img src="./images/secrettext2.png" /> -->
+        <h1>THE SECRET’S OUT: WE’RE SUPER SAFE</h1>
+        <h3>Witness Our Journey</h3>
+    </div>
+
+    <!------------------------------------2nd slide show-------------------------------------->
+    <div id="my2ndSlideshow"></div>
+    <!--------------------------------- jazz image explore----------------------------->
+    <!-- <div class="knowmore"> -->
+        <!-- <img src="./images/jazztext.png" /> -->
+    <!-- </div> -->
+    <!------------------------------------footer---------------------------------------->
+    <div id="footer_index">
+        <!-- <img src="./images/footer.png" /> -->
+        <div>
+        <div id="foot1">
+            <div>
+                <h3>FAQ'S</h3>
+                <h3>Contact Us</h3>
+                <h3>Shipping & Return Policy</h3>
+                <h3>Terms & Conditions</h3>
+                <h3>Privacy Policy</h3>
+            </div>
+        <div>
+            <div><h3>Follow us on</h3></div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fb-icon.png?v=1599571756" alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/insta-icon.png?v=1599571756" alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/twitter-icon.png?v=1599571756" alt="">
+            </div>
+         
+        </div>
+    </div>
+    <hr>
+        
+    </div>
+        <div id="foot2"> 
+            <div>Copyright©2020. All Rights Reserved</div>
+            <div>Made by Ting</div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------->
+</body>
+
+</html>
+
+<!---------------------------------js script--------------------------------------------->
+
+<script>
+    /*---------------------1st slide show--------------------------------------*/
+    let images = ["https://www.bing.com/th?id=OIP.579fvzIMK8ohqCHEfACsTQHaEd&w=322&h=193&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2", "https://www.bing.com/th?id=OIP.-XZFdS0aBXOg7Y2KTKP8rgHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2", "https://th.bing.com/th/id/OIP.uX0yVDiIhCrqv9OrYxYKnAHaHa?w=184&h=184&c=7&r=0&o=5&dpr=1.25&pid=1.7"];
+
+
+    let containers = document.getElementById("mySlideshow");
+    let interval;
+    function startSlideshow() {
+
+
+        let counter = 0;
+        interval = setInterval(function () {
+
+            containers.innerHTML = null;
+            if (counter === images.length) {
+                counter = 0;
+            }
+            let img = document.createElement("img");
+            img.src = images[counter];
+
+            containers.append(img);
+            counter += 1;
+
+        }, 2000)
+
+
+    }
+
+    startSlideshow();
+
+
+    /*---------------------2nd slide show--------------------------------------*/
+
+
+    let images_2 = ["https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-1_guetzli-min.jpg?v=1614755149", "https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-2_guetzli-min.jpg?v=1622009925", "https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-3_guetzli-min.jpg?v=1614755148", "https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-4_guetzli-min.jpg?v=1622009925", "https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-5_guetzli-min.jpg?v=1622009925"];
+
+
+    let containers_2 = document.getElementById("my2ndSlideshow");
+    let interval_2;
+    function start2ndSlideshow() {
+
+
+        let counter_2 = 0;
+        interval_2 = setInterval(function () {
+
+            containers_2.innerHTML = null;
+            if (counter_2 === images_2.length) {
+                counter_2 = 0;
+            }
+            let img_2 = document.createElement("img");
+            img_2.src = images_2[counter_2];
+
+            containers_2.append(img_2);
+            counter_2 += 1;
+
+        }, 1700)
+
+
+    }
+
+    start2ndSlideshow();
+
+
+</script>

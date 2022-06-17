@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        .back{
+            background-image:url(./images/backgroundkamayir.png);
+           width: 100%;
+           height: 900px;
+           background-repeat: no-repeat;
+          
+            
+        }
+       #login_layout{
+           width: 30%;
+         
+           margin-left:70%;
+          
+           background-color: white;
+           text-align: center;
+          
+          
+       }
+       .signin_topbar{
+           background: black;
+           color: white;
+           height: 80px;
+           width: 100%;
+           margin-top: 0;
+           padding-top: 30px;
+           font-size: 25px;
+           text-align: left;
+           padding-left: 20px;
+          
+       }
+      .profile_icon > img{
+         height: 40%;
+         width: 40%;
+      }
+      input{
+          width: 80%;
+          height: 30px;
+          margin:auto;
+      }
+      button{
+        width: 80%;
+          height: 40px;
+          margin:auto;
+          border: 3px solid black;
+          font-size:15px;
+          font-weight: bolder;
+          color: black;
+          background-color: white;
+      }
+      button:hover{
+        width: 80%;
+          height: 43px;
+          margin:auto;
+          border: 3px solid white;
+          font-size:15px;
+          font-weight: bolder;
+          color: white;
+          background-color: black;
+      }
+
+      strong{
+          color: red;
+      }
+      p{
+          padding-left: 10px;
+          padding-right: 10px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h3{
+         
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+     
+      </style>
+</head>
+<body>
+    <div class="back">
+        <div id="login_layout">
+          <div class="signin_topbar">SIGN IN </div> 
+          <br> 
+    
+    <form onsubmit="signup(event)" id="myForm">
+        <label> Name</label><br><br>
+        <input type="text" id="name"/>
+        <br>
+        <br>
+        <label>Phone number</label><br><br>
+        <input type="number" id="phone"/>
+        <br>
+        <br>
+        <label>Email <strong>*</strong></label><br><br>
+        <input type="text" id="email"/>
+        <br>
+        <br>
+        <label>Password <strong>*</strong></label><br><br>
+        <input type="text" id="password"/>
+        <br>
+        <br>
+          <button>submit</button>
+    
+    </form>
+    <br>
+   
+    <div class="profile_icon">
+        <img src="https://deejayfarm.com/wp-content/uploads/2019/10/Profile-pic.jpg"/>
+    </div>
+    <h3>No account yet?</h3>
+    <p>Welcome to Kimaye! Help us with a few details to know you better as you take the journey of enjoying our safe and tasty fruits.</p>
+    <a href="login.html"><button>LOGIN</button></a>
+    <br>
+    <br>
+</div>
+</div>
+
+</body>
+</html>
+<script>
+    function signup(e) {
+
+     e.preventDefault();
+        let myForm = document.getElementById("myForm");
+    let name = myForm.name.value;
+    let email = myForm.email.value;
+    let phone = myForm.phone.value;
+    let password = myForm.password.value;
+    
+   // console.log(name,email,password)
+   if(localStorage.getItem('users')===null){
+       localStorage.setItem("users",JSON.stringify([]));
+   }
+let user = {
+    name,
+    email,
+    phone,
+    password,
+};
+
+let arr = JSON.parse(localStorage.getItem("users"))
+window.location.href = "login.html"
+
+    arr.push(user);
+    localStorage.setItem("users",JSON.stringify(arr));
+   
+  
+}
+
+
+</script>
