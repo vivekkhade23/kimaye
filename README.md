@@ -1,4 +1,5 @@
 # kimaye
+## deployed_link  :-https://kimaye-five.vercel.app/
 ## About
 Kimaye is safe fruit brand meeting global standards of food safety and providing transparency to its consumers through its tech-driven platform (""FruitRoute""). Today, Kimaye is present in most premium retailers in Europe, Middle East and India.
 
