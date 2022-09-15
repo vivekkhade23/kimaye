@@ -15,3 +15,7 @@ Kimaye is safe fruit brand meeting global standards of food safety and providing
 -HTML
 -CSS
 -JavaScript
+
+## features
+-login and signup
+-You can Buy fruits
